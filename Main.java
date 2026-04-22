@@ -11,7 +11,6 @@ public class Main {
         System.out.println("1. Basic Calculator");
         System.out.println("2. Scientific Calculator");
 
-
         user = sc.nextInt();
         switch (user) {
             case 1:
@@ -25,7 +24,7 @@ public class Main {
                 System.out.println("6. Square and Square root");
                 System.out.println("7. Cube and Cube Root");
 
-                user1 = sc.nextInt();
+                int user1 = sc.nextInt();
                 if (user1 == 1) {
                     calc.addition();
                 } else if (user1 == 2) {

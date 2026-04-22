@@ -706,6 +706,84 @@ public class Scientific_clac {
 
         } while (choice != 4);
 
+        sc.close(); 
+    }
+    public static void Permutation_and_Combinations_Calculator(){
+        Scanner sc = new Scanner(System.in);
+
+        int choice;
+
+        do {
+            System.out.println("\nPermutation & Combination Calculator");
+            System.out.println("1. Permutation (nPr)");
+            System.out.println("2. Combination (nCr)");
+            System.out.println("3. Exit");
+            System.out.print("Enter choice: ");
+
+            while (!sc.hasNextInt()) {
+                System.out.print("Invalid! Enter integer: ");
+                sc.next();
+            }
+            choice = sc.nextInt();
+
+            if (choice == 1 || choice == 2) {
+                int n, r;
+
+                System.out.print("Enter n: ");
+                while (!sc.hasNextInt()) {
+                    System.out.print("Invalid! Enter integer: ");
+                    sc.next();
+                }
+                n = sc.nextInt();
+
+                System.out.print("Enter r: ");
+                while (!sc.hasNextInt()) {
+                    System.out.print("Invalid! Enter integer: ");
+                    sc.next();
+                }
+                r = sc.nextInt();
+
+                if (n < 0 || r < 0 || r > n) {
+                    System.out.println("Invalid values! Use n >= r >= 0");
+                    continue;
+                }
+
+                long factN = 1, factR = 1, factNR = 1;
+
+                for (int i = 1; i <= n; i++)
+                    factN *= i;
+
+                for (int i = 1; i <= r; i++)
+                    factR *= i;
+
+                for (int i = 1; i <= (n - r); i++)
+                    factNR *= i;
+
+                // -------- Permutation --------
+                if (choice == 1) {
+                    long nPr = factN / factNR;
+
+                    System.out.println("Permutation (" + n + "P" + r + ") = " + nPr);
+                }
+
+                // -------- Combination --------
+                else if (choice == 2) {
+                    long nCr = factN / (factR * factNR);
+
+                    System.out.println("Combination (" + n + "C" + r + ") = " + nCr);
+                }
+            }
+
+            else if (choice == 3) {
+                System.out.println("Exiting...");
+            }
+
+            else {
+                System.out.println("Invalid choice!");
+            }
+
+        } while (choice != 3);
+
         sc.close();
     }
 }
