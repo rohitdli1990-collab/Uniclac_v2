@@ -536,7 +536,8 @@ public class Scientific_clac {
 
         sc.close();
     }
-    public static void Gradian(){
+
+    public static void Gradian() {
         Scanner sc = new Scanner(System.in);
 
         int choice;
@@ -633,7 +634,7 @@ public class Scientific_clac {
         sc.close();
     }
 
-    public static void Inverse_Trigonometric(){
+    public static void Inverse_Trigonometric() {
         Scanner sc = new Scanner(System.in);
 
         int choice;
@@ -706,9 +707,10 @@ public class Scientific_clac {
 
         } while (choice != 4);
 
-        sc.close(); 
+        sc.close();
     }
-    public static void Permutation_and_Combinations_Calculator(){
+
+    public static void Permutation_and_Combinations_Calculator() {
         Scanner sc = new Scanner(System.in);
 
         int choice;

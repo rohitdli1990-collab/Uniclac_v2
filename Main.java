@@ -54,8 +54,56 @@ public class Main {
                 System.out.println("5. Constant calculation");
                 System.out.println("6. Degree calculatoin");
                 System.out.println("7. Radian calculation");
+                System.out.println("8. Gradian calculator");
+                System.out.println("9. Inverse_Trignometric");
+                System.out.println("10. Permutation_and_Combinations_Calculator");
 
+                int user2 = sc.nextInt();
 
+                switch (user2) {
+                    case 1:
+                        Scientific_clac.Trignomatric();
+                        break;
+
+                    case 2:
+                        Scientific_clac.Log();
+                        break;
+                    
+                    case 3:
+                        Scientific_clac.Power();
+                        break;
+
+                    case 4:
+                        Scientific_clac.factorial();
+                        break;
+
+                    case 5:
+                        Scientific_clac.Constants();
+                        break;
+                    
+                    case 6:
+                        Scientific_clac.Degrees();
+                        break;
+
+                    case 7:
+                        Scientific_clac.Radian();
+                        break;
+                    
+                    case 8:
+                        Scientific_clac.Gradian();
+                        break;
+
+                    case 9:
+                        Scientific_clac.Inverse_Trigonometric();
+                        break;
+
+                    case 10 :
+                        Scientific_clac.Permutation_and_Combinations_Calculator();
+                        break;
+                
+                    default:
+                        break;
+                }
 
                 sc.close();
                 break;
