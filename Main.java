@@ -25,20 +25,20 @@ public class Main {
                 System.out.println("6. Square and Square root");
                 System.out.println("7. Cube and Cube Root");
 
-                user = sc.nextInt();
-                if (user == 1) {
+                user1 = sc.nextInt();
+                if (user1 == 1) {
                     calc.addition();
-                } else if (user == 2) {
+                } else if (user1 == 2) {
                     calc.subtraction();
-                } else if (user == 3) {
+                } else if (user1 == 3) {
                     calc.multplication();
-                } else if (user == 4) {
+                } else if (user1 == 4) {
                     calc.Division();
-                } else if (user == 5) {
+                } else if (user1 == 5) {
                     calc.Percentage();
-                } else if (user == 6) {
+                } else if (user1 == 6) {
                     calc.Square();
-                } else if (user == 7) {
+                } else if (user1 == 7) {
                     calc.cube();
                 } else {
                     System.out.println("Erong Input");
@@ -54,7 +54,9 @@ public class Main {
                 System.out.println("4. Factorial calculation");
                 System.out.println("5. Constant calculation");
                 System.out.println("6. Degree calculatoin");
-                System.out.println("7. Radian calculation");z
+                System.out.println("7. Radian calculation");
+
+
 
                 sc.close();
                 break;

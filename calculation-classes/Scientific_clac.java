@@ -441,7 +441,271 @@ public class Scientific_clac {
     }
 
     public static void Radian() {
-        
+        Scanner sc = new Scanner(System.in);
+
+        int choice;
+
+        do {
+            System.out.println("\nRadian Converter");
+            System.out.println("1. Radian to Degree");
+            System.out.println("2. Degree to Radian");
+            System.out.println("3. Radian to Gradian");
+            System.out.println("4. Gradian to Radian");
+            System.out.println("5. Exit");
+            System.out.print("Enter choice: ");
+
+            while (!sc.hasNextInt()) {
+                System.out.print("Invalid! Enter integer: ");
+                sc.next();
+            }
+            choice = sc.nextInt();
+
+            // -------- 1. Radian to Degree --------
+            if (choice == 1) {
+                double rad;
+
+                System.out.print("Enter radian: ");
+                while (!sc.hasNextDouble()) {
+                    System.out.print("Invalid! Enter number: ");
+                    sc.next();
+                }
+                rad = sc.nextDouble();
+
+                double degree = Math.toDegrees(rad);
+
+                System.out.println("Degree = " + degree);
+            }
+
+            // -------- 2. Degree to Radian --------
+            else if (choice == 2) {
+                double degree;
+
+                System.out.print("Enter degree: ");
+                while (!sc.hasNextDouble()) {
+                    System.out.print("Invalid! Enter number: ");
+                    sc.next();
+                }
+                degree = sc.nextDouble();
+
+                double rad = Math.toRadians(degree);
+
+                System.out.println("Radian = " + rad);
+            }
+
+            // -------- 3. Radian to Gradian --------
+            else if (choice == 3) {
+                double rad;
+
+                System.out.print("Enter radian: ");
+                while (!sc.hasNextDouble()) {
+                    System.out.print("Invalid! Enter number: ");
+                    sc.next();
+                }
+                rad = sc.nextDouble();
+
+                double grad = rad * 200 / Math.PI;
+
+                System.out.println("Gradian = " + grad);
+            }
+
+            // -------- 4. Gradian to Radian --------
+            else if (choice == 4) {
+                double grad;
+
+                System.out.print("Enter gradian: ");
+                while (!sc.hasNextDouble()) {
+                    System.out.print("Invalid! Enter number: ");
+                    sc.next();
+                }
+                grad = sc.nextDouble();
+
+                double rad = grad * Math.PI / 200;
+
+                System.out.println("Radian = " + rad);
+            }
+
+            else if (choice == 5) {
+                System.out.println("Exiting...");
+            }
+
+            else {
+                System.out.println("Invalid choice!");
+            }
+
+        } while (choice != 5);
+
+        sc.close();
+    }
+    public static void Gradian(){
+        Scanner sc = new Scanner(System.in);
+
+        int choice;
+
+        do {
+            System.out.println("\nGradian Converter");
+            System.out.println("1. Gradian to Degree");
+            System.out.println("2. Degree to Gradian");
+            System.out.println("3. Gradian to Radian");
+            System.out.println("4. Radian to Gradian");
+            System.out.println("5. Exit");
+            System.out.print("Enter choice: ");
+
+            while (!sc.hasNextInt()) {
+                System.out.print("Invalid! Enter integer: ");
+                sc.next();
+            }
+            choice = sc.nextInt();
+
+            // -------- 1. Gradian to Degree --------
+            if (choice == 1) {
+                double grad;
+
+                System.out.print("Enter gradian: ");
+                while (!sc.hasNextDouble()) {
+                    System.out.print("Invalid! Enter number: ");
+                    sc.next();
+                }
+                grad = sc.nextDouble();
+
+                double degree = grad * 0.9;
+
+                System.out.println("Degree = " + degree);
+            }
+
+            // -------- 2. Degree to Gradian --------
+            else if (choice == 2) {
+                double degree;
+
+                System.out.print("Enter degree: ");
+                while (!sc.hasNextDouble()) {
+                    System.out.print("Invalid! Enter number: ");
+                    sc.next();
+                }
+                degree = sc.nextDouble();
+
+                double grad = degree / 0.9;
+
+                System.out.println("Gradian = " + grad);
+            }
+
+            // -------- 3. Gradian to Radian --------
+            else if (choice == 3) {
+                double grad;
+
+                System.out.print("Enter gradian: ");
+                while (!sc.hasNextDouble()) {
+                    System.out.print("Invalid! Enter number: ");
+                    sc.next();
+                }
+                grad = sc.nextDouble();
+
+                double rad = grad * Math.PI / 200;
+
+                System.out.println("Radian = " + rad);
+            }
+
+            // -------- 4. Radian to Gradian --------
+            else if (choice == 4) {
+                double rad;
+
+                System.out.print("Enter radian: ");
+                while (!sc.hasNextDouble()) {
+                    System.out.print("Invalid! Enter number: ");
+                    sc.next();
+                }
+                rad = sc.nextDouble();
+
+                double grad = rad * 200 / Math.PI;
+
+                System.out.println("Gradian = " + grad);
+            }
+
+            else if (choice == 5) {
+                System.out.println("Exiting...");
+            }
+
+            else {
+                System.out.println("Invalid choice!");
+            }
+
+        } while (choice != 5);
+
+        sc.close();
     }
 
+    public static void Inverse_Trigonometric(){
+        Scanner sc = new Scanner(System.in);
+
+        int choice;
+
+        do {
+            System.out.println("\nInverse Trigonometric Calculator");
+            System.out.println("1. sin⁻¹(x)  [arcsin]");
+            System.out.println("2. cos⁻¹(x)  [arccos]");
+            System.out.println("3. tan⁻¹(x)  [arctan]");
+            System.out.println("4. Exit");
+            System.out.print("Enter choice: ");
+
+            while (!sc.hasNextInt()) {
+                System.out.print("Invalid! Enter integer: ");
+                sc.next();
+            }
+            choice = sc.nextInt();
+
+            if (choice >= 1 && choice <= 3) {
+                double x;
+
+                System.out.print("Enter value x: ");
+                while (!sc.hasNextDouble()) {
+                    System.out.print("Invalid! Enter number: ");
+                    sc.next();
+                }
+                x = sc.nextDouble();
+
+                double rad = 0;
+
+                // -------- arcsin --------
+                if (choice == 1) {
+                    if (x < -1 || x > 1) {
+                        System.out.println("sin⁻¹(x) undefined for x outside [-1,1]");
+                        continue;
+                    }
+
+                    rad = Math.asin(x);
+                    System.out.println("sin⁻¹(" + x + ") = " + rad + " rad");
+                    System.out.println("sin⁻¹(" + x + ") = " + Math.toDegrees(rad) + "°");
+                }
+
+                // -------- arccos --------
+                else if (choice == 2) {
+                    if (x < -1 || x > 1) {
+                        System.out.println("cos⁻¹(x) undefined for x outside [-1,1]");
+                        continue;
+                    }
+
+                    rad = Math.acos(x);
+                    System.out.println("cos⁻¹(" + x + ") = " + rad + " rad");
+                    System.out.println("cos⁻¹(" + x + ") = " + Math.toDegrees(rad) + "°");
+                }
+
+                // -------- arctan --------
+                else if (choice == 3) {
+                    rad = Math.atan(x);
+                    System.out.println("tan⁻¹(" + x + ") = " + rad + " rad");
+                    System.out.println("tan⁻¹(" + x + ") = " + Math.toDegrees(rad) + "°");
+                }
+            }
+
+            else if (choice == 4) {
+                System.out.println("Exiting...");
+            }
+
+            else {
+                System.out.println("Invalid choice!");
+            }
+
+        } while (choice != 4);
+
+        sc.close();
+    }
 }
