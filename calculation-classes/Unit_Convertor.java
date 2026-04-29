@@ -11,8 +11,17 @@ public class Unit_Convertor{
         System.out.println("6. Decimeter(Dm)");
         System.out.println("7. Micrometer(um)");
         System.out.println("8. Nanometer(nm)");
-        System.out.println("9. Foot(ft)");
-        System.out.println("10 .Mile(mile)");
+        System.out.println("9. Docameter(dm)");
+        System.out.println("10. Hectometer (hm)");
+        System.out.println("11. Foot(ft)");
+        System.out.println("12. Mile(mile)");
+        System.out.println("13. Yard (yard)");
+        System.out.println("14. Rod (rod)");
+        System.out.println("15. furliong");
+        System.out.println("16. Nautical mile");
+        System.out.println("17. Radius(r)");
+        System.out.println("18. Diameter (d)");
+        
         System.out.println("Enter your choose:- ");
         Scanner sc = new Scanner(System.in);
         int userchoose = sc.nextInt();
