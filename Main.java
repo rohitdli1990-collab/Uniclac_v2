@@ -44,7 +44,8 @@ public class Main {
                 }
                 break;
 
-                case 2:
+                
+            case 2:
                 System.out.println("Welcome to Scientific calciulator");
                 System.out.println("enter your choose:- ");
                 System.out.println("1. Trignomatric calculation");
