@@ -106,6 +106,20 @@ public class Main {
                         break;
                 }
 
+                case 3:    
+                    System.out.println("Welcome to Unit Convertors and calculators");
+                    System.out.println("Enter your Choose:- ");
+                    System.out.println("1. Lenght Convertors");
+
+
+                    int user3 = sc.nextInt();
+
+                    switch (user3){
+                        case 1:
+                            Unit_Convertor.length();
+                            break;
+                    }
+
                 sc.close();
                 break;
 
