@@ -10,6 +10,7 @@ public class Main {
         System.out.println("Enter your Choose");
         System.out.println("1. Basic Calculator");
         System.out.println("2. Scientific Calculator");
+        System.out.println("3. Unit_Convertors");
 
         user = sc.nextInt();
         switch (user) {

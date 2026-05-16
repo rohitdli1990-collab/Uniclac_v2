@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.ComponentInputMap;
+
 public class Unit_Convertor {
     public static void length() {
         System.out.println("Welcome to Length calculator");
@@ -19,10 +21,12 @@ public class Unit_Convertor {
         System.out.println("14. Rod (rod)");
         System.out.println("15. furliong");
         System.out.println("16. Nautical mile");
-        System.out.println("17. Radius(r)");
-        System.out.println("18. Diameter (d)");
-        System.out.println("19. Circumference");
-        System.out.println("20. Arc Length");
+        System.out.println("17. Astronomical Unit");
+        System.out.println("18. Light-year");
+        System.out.println("19. Parsec");
+        System.out.println("20. Cubit");
+        System.out.println("21. Hand");
+        System.out.println("22. Fathom");
         System.out.println("Enter your choose:- ");
         Scanner sc = new Scanner(System.in);
         int userchoose = sc.nextInt();
@@ -252,9 +256,119 @@ public class Unit_Convertor {
                         }
 
                     } while (choice != 4);
-
                 }
+            case 2:
+                System.out.println("Cennimeter to Meter");
+                System.out.println("Centimeter to Millemeter");
+                System.out.println("Centimeter to Kilometer");
+                System.out.println("centimeter to Inch");
+                System.out.println("Centimeter to Decimeter");
+                System.out.println("Centimeter to Micrometer");
+                System.out.println("centimeter to Nanometer");
+                System.out.println("Centimeter to Docameter");
+                System.out.println("centimeter to Hectometer");
+                System.out.println("Centimeter to Foot");
+                System.out.println("Centimeter to Mile");
+                System.out.println("Centimeter to Yard");
+                System.out.println("Centimeter to Rod");
+                System.out.println("Centimeter to Furliong");
+                System.out.println("Centimeter to Nautical Mile");
+                System.out.println("Centimeter to Radius");
+                System.out.println("Centimeter to Diameter");
+                System.out.println("Centimeter to Circumference");
+                System.out.println("Centimeter to Arc Length");
+                System.out.println("enter your choose:- ");
+
+                int Centiuser = sc.nextInt();
+                System.out.println("Enter your number:- ");
+                double b = sc.nextInt();
+                if (Centiuser == 1) {
+                    double result = b * 0.01;
+                    System.out.println("Your result:- " + result);
+                } else if (Centiuser == 2) {
+                    double result = b * 10;
+                    System.out.println("Your result is:- " + result);
+                } else if (Centiuser == 3) {
+                    double result = b * 0.00001;
+                    System.out.println("Your result is:- " + result);
+                } else if (Centiuser == 4) {
+                    double result = b * 0.393701;
+                    System.out.println("your result is:- " + result);
+                } else if (Centiuser == 5) {
+                    double result = b * 0.1;
+                    System.out.println("your result is:- " + result);
+                } else if (Centiuser == 6) {
+                    double result = b * 10000;
+                    System.out.println("Your Result is:- " + result);
+                } else if (Centiuser == 7) {
+                    double result = b * 10000000;
+                    System.out.println("Your result is:- " + result);
+                } else if (Centiuser == 8) {
+                    double result = b * 0.001;
+                    System.out.println("your result is:- " + result);
+                } else if (Centiuser == 9) {
+                    double result = b * 0.00001;
+                    System.out.println("Your result is:- " + result);
+                } else if (Centiuser == 10) {
+                    double result = b * 0.0328084;
+                    System.out.println("your result is:- " + result);
+                } else if (Centiuser == 11) {
+                    double result = b / 160900;
+                    System.out.println("Your result is:- " + result);
+                } else if (Centiuser == 12) {
+                    double result = b * 0.0109361;
+                    System.out.println("Your result is:- " + result);
+                } else if (Centiuser == 13) {
+                    double result = b * 0.00198839;
+                    System.out.println("your result is:- " + result);
+                } else if (Centiuser == 14) {
+                    double result = b / 20120;
+                    System.out.println("your result is:- " + result);
+                } else if (Centiuser == 15) {
+                    double result = b / 185200;
+                    System.out.println("your result is:- " + result);
+                } else if (Centiuser == 16) {
+                    double result = b * (149597870700l * 0.01);
+                    System.out.println("your result is:- " + result);
+                } else if (Centiuser == 17) {
+                    double result = b * (9460730472580l * 0.393701);
+                    System.out.println("your result is:- " + result);
+                } else if (Centiuser == 18) {
+                    double result = b * ((9460730472580l * 3.68) * 0.393701);
+                    System.out.println("Your result is:- " + result);
+                } else if (Centiuser == 19) {
+                    System.out.println("1. Standard Cubit");
+                    System.out.println("2. Royal Cubit");
+
+                    int choose = sc.nextInt();
+
+                    if (choose == 1) {
+                        double result = b * 44.5;
+                        System.out.println("Your result is:- " + result);
+                    } else if (choose == 2) {
+                        double result = b * 52.5;
+                        System.out.println("Your result is:- " + result);
+                    }
+                }
+                else if (Centiuser == 20){
+                    double result = b*10.16;
+                    System.out.println("your result is:- " + result);
+                }
+                else if (Centiuser == 21){
+                    double result = b*182.88;
+                    System.out.println("Your result is:- " + result);
+                }
+                else {
+                    System.out.println("Invaild Input");
+                }
+                sc.close();
+                break;
+
+            case 3:
+                
+
+
+
         }
-        sc.close();
     }
 }
