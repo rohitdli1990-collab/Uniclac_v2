@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.ComponentInputMap;
-
 public class Unit_Convertor {
     public static void length() {
         System.out.println("Welcome to Length calculator");
@@ -15,18 +13,20 @@ public class Unit_Convertor {
         System.out.println("8. Nanometer(nm)");
         System.out.println("9. Docameter(dm)");
         System.out.println("10. Hectometer (hm)");
-        System.out.println("11. Foot(ft)");
-        System.out.println("12. Mile(mile)");
-        System.out.println("13. Yard (yard)");
-        System.out.println("14. Rod (rod)");
-        System.out.println("15. furliong");
-        System.out.println("16. Nautical mile");
-        System.out.println("17. Astronomical Unit");
-        System.out.println("18. Light-year");
-        System.out.println("19. Parsec");
-        System.out.println("20. Cubit");
-        System.out.println("21. Hand");
-        System.out.println("22. Fathom");
+        System.out.println("11. Megameter");
+        System.out.println("12. Thou");
+        System.out.println("13. Foot(ft)");
+        System.out.println("14. Mile(mile)");
+        System.out.println("15. Yard (yard)");
+        System.out.println("16. Rod (rod)");
+        System.out.println("17. furliong");
+        System.out.println("18. Nautical mile");
+        System.out.println("19. Astronomical Unit");
+        System.out.println("20. Light-year");
+        System.out.println("21. Parsec");
+        System.out.println("22. Cubit");
+        System.out.println("23. Hand");
+        System.out.println("24. Fathom");
         System.out.println("Enter your choose:- ");
         Scanner sc = new Scanner(System.in);
         int userchoose = sc.nextInt();
@@ -48,10 +48,12 @@ public class Unit_Convertor {
                 System.out.println("13. Meter to Rod");
                 System.out.println("14. Meter to furliong");
                 System.out.println("15. Meter to Nautical mile");
-                System.out.println("16. Meter to Radius");
-                System.out.println("17. Meter to Diameter");
-                System.out.println("18. Meter to Circumference");
-                System.out.println("19. Meter to Arc Length");
+                System.out.println("16. Meter to Astronomical Unit");
+                System.out.println("17. Meter to Light-year");
+                System.out.println("18. Meter to Parsec");
+                System.out.println("19. Meter to Cubit");
+                System.out.println("20. Meter to Hand");
+                System.out.println("21. Meter to Fathom");
                 System.out.println("Enter your Choose:- ");
                 int meterChoose = sc.nextInt();
                 System.out.println("Enter value in meter:- ");
@@ -103,160 +105,37 @@ public class Unit_Convertor {
                     double result = a * 0.000539957;
                     System.out.println("Your result is:- " + result);
                 } else if (meterChoose == 16) {
-                    double result = a * 6.28;
+                    double result = a * 149597870700l;
                     System.out.println("Your result is:- " + result);
                 } else if (meterChoose == 17) {
-                    double result = a * 12.56;
+                    double result = a * 9460730472580800l;
                     System.out.println("Your result is:- " + result);
-                } else if (meterChoose == 18) {
-                    int choice;
+                } else if (meterChoose == 18){
+                    double result = a*(3*9460730472580800l);
+                    System.out.println("your result is:- " + result);
+                } else if (meterChoose == 19){
+                    System.out.println("Standard Cubit");
+                    System.out.println("Royal Cubit");
+                    System.out.println("Enter your Choose:- ");
+                    int choose = sc.nextInt();
 
-                    do {
-                        System.out.println("\nCircumference Calculator");
-                        System.out.println("1. Using Radius");
-                        System.out.println("2. Using Diameter");
-                        System.out.println("3. Exit");
-                        System.out.print("Enter choice: ");
-
-                        while (!sc.hasNextInt()) {
-                            System.out.print("Invalid! Enter integer: ");
-                            sc.next();
-                        }
-                        choice = sc.nextInt();
-
-                        if (choice == 1) {
-                            double r;
-
-                            System.out.print("Enter radius: ");
-                            while (!sc.hasNextDouble()) {
-                                System.out.print("Invalid! Enter number: ");
-                                sc.next();
-                            }
-                            r = sc.nextDouble();
-
-                            if (r < 0) {
-                                System.out.println("Radius cannot be negative!");
-                                continue;
-                            }
-
-                            double c = 2 * Math.PI * r;
-
-                            System.out.println("Circumference = " + c);
-                        }
-
-                        else if (choice == 2) {
-                            double d;
-
-                            System.out.print("Enter diameter: ");
-                            while (!sc.hasNextDouble()) {
-                                System.out.print("Invalid! Enter number: ");
-                                sc.next();
-                            }
-                            d = sc.nextDouble();
-
-                            if (d < 0) {
-                                System.out.println("Diameter cannot be negative!");
-                                continue;
-                            }
-
-                            double c = Math.PI * d;
-
-                            System.out.println("Circumference = " + c);
-                        }
-
-                        else if (choice == 3) {
-                            System.out.println("Exiting...");
-                        }
-
-                        else {
-                            System.out.println("Invalid choice!");
-                        }
-
-                    } while (choice != 3);
-                } else if (meterChoose == 19) {
-                    int choice;
-
-                    do {
-                        System.out.println("\nArc Length Calculator");
-                        System.out.println("1. Using Radius (Angle in Degrees)");
-                        System.out.println("2. Using Radius (Angle in Radians)");
-                        System.out.println("3. Using Diameter (Angle in Degrees)");
-                        System.out.println("4. Exit");
-                        System.out.print("Enter choice: ");
-
-                        while (!sc.hasNextInt()) {
-                            System.out.print("Invalid! Enter integer: ");
-                            sc.next();
-                        }
-                        choice = sc.nextInt();
-
-                        // -------- OPTION 1 --------
-                        if (choice == 1) {
-                            double r, angle;
-
-                            System.out.print("Enter radius: ");
-                            r = sc.nextDouble();
-
-                            System.out.print("Enter angle (degrees): ");
-                            angle = sc.nextDouble();
-
-                            if (r < 0) {
-                                System.out.println("Invalid radius!");
-                                continue;
-                            }
-
-                            double arc = (Math.PI * r * angle) / 180;
-                            System.out.println("Arc Length = " + arc);
-                        }
-
-                        // -------- OPTION 2 --------
-                        else if (choice == 2) {
-                            double r, angle;
-
-                            System.out.print("Enter radius: ");
-                            r = sc.nextDouble();
-
-                            System.out.print("Enter angle (radians): ");
-                            angle = sc.nextDouble();
-
-                            if (r < 0) {
-                                System.out.println("Invalid radius!");
-                                continue;
-                            }
-
-                            double arc = r * angle;
-                            System.out.println("Arc Length = " + arc);
-                        }
-
-                        // -------- OPTION 3 --------
-                        else if (choice == 3) {
-                            double d, angle;
-
-                            System.out.print("Enter diameter: ");
-                            d = sc.nextDouble();
-
-                            System.out.print("Enter angle (degrees): ");
-                            angle = sc.nextDouble();
-
-                            if (d < 0) {
-                                System.out.println("Invalid diameter!");
-                                continue;
-                            }
-
-                            double arc = (Math.PI * d * angle) / 360;
-                            System.out.println("Arc Length = " + arc);
-                        }
-
-                        else if (choice == 4) {
-                            System.out.println("Exiting...");
-                        }
-
-                        else {
-                            System.out.println("Invalid choice!");
-                        }
-
-                    } while (choice != 4);
+                    if (choose == 1){
+                        double result = a*0.457;
+                        System.out.println("Your result is:- " + result);
+                    } else if (choose == 2){
+                        double result = a*0.5235;
+                        System.out.println("Your result is:- " + result);
+                    } else {
+                        System.out.println("Invaild input");
+                    }
+                } else if (meterChoose == 20){
+                    double result = a*9.84252;
+                    System.out.println("Your result is:- " + result);
+                } else if (meterChoose == 21){
+                    double result ;
                 }
+
+                
             case 2:
                 System.out.println("Cennimeter to Meter");
                 System.out.println("Centimeter to Millemeter");
@@ -365,7 +244,28 @@ public class Unit_Convertor {
                 break;
 
             case 3:
-                
+                System.out.println("1. Millimeter to meter");
+                System.out.println("2. Millimeter to Centimeter");
+                System.out.println("3. Millimeter to Kilometer");
+                System.out.println("4. Millimeter to Inch");
+                System.out.println("5. Millimeter to Decimeter");
+                System.out.println("6. Millimeter to Micrometer");
+                System.out.println("7. Millimeter to Nanometer");
+                System.out.println("8. Millimeter to Docameter");
+                System.out.println("9. Millimeter to Hectometer");
+                System.out.println("10. Millimeter to Foot");
+                System.out.println("11. Millimeter to Mile");
+                System.out.println("12. Millemeter to yard");
+                System.out.println("13. Millimeter to rod");
+                System.out.println("13. Millemeter to Furliong");
+                System.out.println("14. Millimeter to Nautical Mile");
+                System.out.println("15. Millimeter to Astronomical Unit");
+                System.out.println("16. Millimeter to Light year");
+                System.out.println("17. Millimeter to Parsec");
+                System.out.println("18. Millemeter to Cubit");
+                System.out.println("19. Millimeter to Hand");
+                System.out.println("20. Millimeter to Fathom");
+
 
 
 
