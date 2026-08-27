@@ -363,6 +363,41 @@ public class Unit_Convertor {
                } else {
                     System.out.println("Invaild input!");
                }
+
+            case 4:
+                System.out.println("Kilometer to meter");
+                System.out.println("Kilometer to Cetimeter");
+                System.out.println("Kilometer to Millimeter");
+                System.out.println("Kilometer to Inch");
+                System.out.println("Kilometer to Decimeter");
+                System.out.println("Kilometer to micrometer");
+                System.out.println("Kilometer to Nanometer");
+                System.out.println("kilometer to Docameter");
+                System.out.println("Kilometer to Hectometer");
+                System.out.println("Kilometer to Megameter");
+                System.out.println("Kilometer to Thou");
+                System.out.println("Kilometer to Foot");
+                System.out.println("Kilometer to Mile");
+                System.out.println("kilometer to yard");
+                System.out.println("kilometer to rod");
+                System.out.println("Kilometer to furliong");
+                System.out.println("kilometer to Nautical mile");
+                System.out.println("Kilometer to Astronomical Unit");
+                System.out.println("Kilometer to Light year");
+                System.out.println("kilometer to Parsec");
+                System.out.println("Kilometer to cubit");
+                System.out.println("Kilometer to hand");
+                System.out.println("Kilometer to Fathom");
+                System.out.println("Enter your Choose:- ");
+                int kilouser = sc.nextInt();
+                System.out.println("Enter your value of Kilometer");
+                double d = sc.nextDouble();
+
+                if (kilouser == 1){
+
+                }
+
+
         }
     }
 }
