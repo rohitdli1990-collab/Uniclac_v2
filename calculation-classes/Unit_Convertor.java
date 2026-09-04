@@ -533,8 +533,65 @@ public class Unit_Convertor {
                     double result = e * 0.0000157828;
                     System.out.println("the result is:- " + result);
                 } else if (Incuser == 14) {
-                    double result = ;
+                    double result = e * 0.0277778;
+                    System.out.println("the result is:- " + result);
+                } else if (Incuser == 15){
+                    double result = e * 0.00505051;
+                    System.out.println("the result is:- " + result);
+                } else if (Incuser == 16) {
+                    double result = e * 0.000126262;
+                    System.out.println("the result is:- " + result);
+                } else if (Incuser == 17){
+                    double result = e * 0.0000137149;
+                    System.out.println("the result is:- " + result);
+                } else if (Incuser == 18){
+                    double result = e * 0.000000000000169789;
+                    System.out.println("your result is:- " + result);
+                } else if (Incuser == 19){
+                    double result = e * 0.00000000000000000268478;
+                    System.out.println("the result is:- " + result);
+                } else if (Incuser == 20){
+                    double result = e * 0.000000000000000000823158;
+                    System.out.println("the result is:- " + result);
+                } else if (Incuser == 21){
+                    double result = e / 18;
+                    System.out.println("the result is:- " + result);
+                } else if (Incuser == 22){
+                    double result = e * 0.25;
+                    System.out.println("the result is:- " + result);
+                } else if (Incuser == 23){
+                    double result = e * 0.0138889;
+                    System.out.println("the result is:- " + result);
+                } else {
+                    System.out.println("Invaild input");
+                    break;
                 }
+
+            case 6:
+                System.out.println("Decimeter to meter");
+                System.out.println("Decimeter to centimeter");
+                System.out.println("Decimeter to millimeter");
+                System.out.println("Decimeter to kilometer");
+                System.out.println("Decimeter to Inch");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
+                System.out.println("Decimeter to ");
         }
     }
 }
